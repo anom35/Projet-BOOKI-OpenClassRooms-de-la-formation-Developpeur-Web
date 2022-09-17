@@ -22,8 +22,10 @@
             <header>
                 <nav>
                     <a href="#" id="logo"><img src="assets/logo/Booki.png" alt="Logo du site réservia"></a>
-                    <a href="#" class="menu">Hébergements</a>
-                    <a href="#" class="menu">Activités</a>
+                    <div class="bloc-menu">
+                        <a href="#" class="menu">Hébergements</a>
+                        <a href="#" class="menu">Activités</a>
+                    </div>
                 </nav>
             </header>
 
@@ -32,36 +34,37 @@
             &       Search Bar
             -->
             <form action="#">
-                <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
-                <i class="fa-solid fa-location-dot"></i>
-                <label for="search" class="accessibility-label">Entrez le nom de la ville</label>
-                <input type="text" id="search" placeholder="Marseille, France">
-                <button>Rechercher
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button><br>
+                <div class="btn-search">
+                    <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <label for="search" class="accessibility-label">Entrez le nom de la ville</label>
+                    <input type="text" id="search" placeholder="Marseille, France">
+                    <button><span>Rechercher</span>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button><br>
+                </div>
             </form>
-
 
             <!-- 
             &       Filters
             -->
             <div class="filters">
                 <h3>Filtres</h3>
-                <input type='checkbox' name="filter-eco" id='economique'>
-                <label for='economique' class='btn-filter'>
+                <label class='btn-filter'>
+                    <input type='checkbox' name="filter-eco">
                     <i class="fa-solid fa-money-bill-wave"></i>Économique
                 </label>
-                <input type='checkbox' name="filter-fam" id='familiale'>
-                <label for='familiale' class='btn-filter'>
+                <label class='btn-filter'>
+                    <input type='checkbox' name="filter-fam">
                     <i class="fa-solid fa-child-reaching"></i>Familiale
                 </label>
-                <input type='checkbox' name="filter-rom" id='romantique'>
-                <label for='romantique' class='btn-filter'>
+                <label class='btn-filter'>
+                    <input type='checkbox' name="filter-rom">
                     <i class="fa-solid fa-heart"></i>Romantique
                 </label>
-                <input type='checkbox' name="filter-ani" id='animaux'>
-                <label for='animaux' class='btn-filter'>
+                <label class='btn-filter'>
+                    <input type='checkbox' name="filter-ani">
                     <i class="fa-solid fa-dog"></i>Animaux autorisés
                 </label>
             </div>
