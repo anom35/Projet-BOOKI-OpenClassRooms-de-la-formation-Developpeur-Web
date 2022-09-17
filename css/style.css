@@ -142,11 +142,10 @@ form button:hover {
     padding-top: 18px;
     flex-flow: row wrap;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
  }
 
 .filters label {
-    font-size: 16px;
     cursor: pointer;
 }
 
@@ -154,11 +153,19 @@ form button:hover {
     visibility: hidden;
 }
   
-.filters input[type="checkbox"]:checked + label {
+.btn-filter input[type="checkbox"]:checked + label {
     box-shadow: 4px 4px 4px var(--grey);
     background-color: var(--dark-grey);
     border: 1px solid greenyellow;
     color: var(--white);
+}
+
+.filters i {
+    margin-left: -20px;
+}
+
+.filters h3 {
+    margin-right: 20px;
 }
 
 .btn-filter {
@@ -197,6 +204,7 @@ form button:hover {
 }
 
 
+
 #icon-info {
     display: flex;
     border-radius: 50%; 
@@ -231,8 +239,6 @@ form button:hover {
 .all-articles {
     display: flex;
     gap: 20px;
-/*    margin-left: 10px;
-    flex-wrap: wrap; */
 } 
 .all-articles > div {
     border-radius: 16px;
@@ -599,27 +605,28 @@ footer p {
 
 
     /* section: menu */
-    nav {
-        display: flex;
-    }
 
+    nav {
+        display: block;
+    }
     nav img {
+        display: block;
         margin: auto;
+        padding-left: 40px;
     }
 
     .bloc-menu {
+        display: flex;
         flex-basis: 100%;
         text-align: center;
     }
-
     .bloc-menu a {
         flex-basis: 50%;
         text-align: center;
         justify-content: center;
         border-bottom: 3px solid var(--grey);
     }
-
-    nav a:hover {
+    .bloc-menu a:hover {
         border-top-color: transparent;
         border-bottom-color: var(--blue);  
     }
@@ -629,13 +636,6 @@ footer p {
     /* 
     ^   Section: Search bar 
     */   
-    body {
-        min-width: 200px;
-    }
-    .search-header {
-        margin-top: 25px;
-        margin-left: 10px;
-    }
 
     .fa-solid.fa-magnifying-glass {
         display: inline;
@@ -645,33 +645,32 @@ footer p {
         padding: 0;
     }
 
-    .btn-search {
-        border-radius: 14px;
-        margin-left: -12px;
-        width: 40px;
-    }
-
     .btn-search span {
         display: none;
     }
     
-    .btn-search:hover {
-        box-shadow: 1px 1px 10px var(--dark-grey);
-    }
-
+  
+    
 
     /* 
     ^       filters 
     */
     .filters {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: baseline;
+
     }
-    .filters label {
+    .filters h3 {
+        margin: 0;
+    }
+    /* .filters label {
         margin-bottom: 10px;
-    }
-    .filter {
+    } */
+    /* .filter {
         margin-top: 10px;
-    }
+    } */
 
 
 
@@ -782,5 +781,10 @@ footer p {
     /* 
     ^       footer 
     */
-    
+    footer {
+        display: block;
+    }
+    .footer-left, .footer-middle {
+        margin-bottom: 25px;
+    }
 }
