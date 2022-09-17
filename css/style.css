@@ -28,7 +28,7 @@
 	left:-999px;    
 }
 
-body {
+main {
     margin-left: 30px;
     max-width: 1500px;
     margin: 0 auto;
@@ -411,7 +411,7 @@ form button:hover {
 }
 .card-100:hover {
     transform: scale(1.02);
-    box-shadow: 0 0 16px var(--blue);
+    box-shadow: 0 0 8px var(--blue);
 }
 .card-100 h4 {
     margin: 5px 0 0 20px;
@@ -436,7 +436,7 @@ form button:hover {
 }
 .card-60:hover {
     transform: scale(1.02);
-    box-shadow: 0 0 16px var(--blue);
+    box-shadow: 0 0 8px var(--blue);
 }
 .card-60 img {
     max-height: 195px;
@@ -460,7 +460,7 @@ form button:hover {
 }
 .card-40:hover {
     transform: scale(1.02);
-    box-shadow: 0 0 16px var(--blue);
+    box-shadow: 0 0 8px var(--blue);
 }
 .card-40 img {
     max-height: 115px;
@@ -486,7 +486,7 @@ form button:hover {
 }
 .card-50:hover {
     transform: scale(1.02);
-    box-shadow: 0 0 16px var(--blue);
+    box-shadow: 0 0 8px var(--blue);
 }
 .card-50 img {
     max-height: 155px;
@@ -528,8 +528,9 @@ form button:hover {
 footer {
     display: flex;
     flex-basis: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
     background-color: var(--light-grey);
-    height: 150px;
     padding: 30px;
     
 }
@@ -548,7 +549,7 @@ footer p {
 .footer-left, 
 .footer-middle, 
 .footer-right {
-    min-width: 33%;
+    min-width: 30%;
     min-height: 100px;
 }
 
