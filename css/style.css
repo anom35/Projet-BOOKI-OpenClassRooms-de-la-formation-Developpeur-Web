@@ -18,6 +18,7 @@
     --dark-grey : dimgrey;
     --light-grey : #f2f2f2;
     --white: white;
+    --green-fluo: #39FF14;
 }
 
 /*  
@@ -145,47 +146,28 @@ form button:hover {
     gap: 20px;
  }
 
-.filters label {
-    cursor: pointer;
-}
-
-.filters input[type="checkbox"] {
-    visibility: hidden;
-}
-  
-.btn-filter input[type="checkbox"]:checked + label {
-    box-shadow: 4px 4px 4px var(--grey);
-    background-color: var(--dark-grey);
-    border: 1px solid greenyellow;
-    color: var(--white);
-}
-
-.filters i {
-    margin-left: -20px;
-}
-
-.filters h3 {
+ .filters h3 {
     margin-right: 20px;
+}
+
+.btn-filter p {
+    margin: 0;
+    padding-right: 20px;
+    cursor: pointer;
 }
 
 .btn-filter {
     font-weight: bold;
-    padding-right: 15px;
     border: 1px solid var(--light-grey);
     border-radius: 30px;
     border-left: none;
 }
 
-.btn-filter:hover {
+.btn-filter:hover{
     background-color: var(--light-grey);
     box-shadow: 0 0 8px var(--blue);
 }
   
-.btn-filter:hover i {
-    background-color: var(--blue);
-    color: var(--light-blue);
-}
-
 .btn-filter .fa-solid {
     background-color: var(--light-blue);
     border-radius: 30px;
