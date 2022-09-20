@@ -15,20 +15,20 @@
 
     <body>
 
+        <!-- 
+        &       HEADER
+        -->
+        <header>
+            <nav>
+                <a href="#" id="logo"><img src="assets/logo/Booki.png" alt="Logo du site réservia"></a>
+                <div class="bloc-menu">
+                    <a href="#" class="menu">Hébergements</a>
+                    <a href="#" class="menu">Activités</a>
+                </div>
+            </nav>
+        </header>
+   
         <main>
-            <!-- 
-            &       HEADER
-            -->
-            <header>
-                <nav>
-                    <a href="#" id="logo"><img src="assets/logo/Booki.png" alt="Logo du site réservia"></a>
-                    <div class="bloc-menu">
-                        <a href="#" class="menu">Hébergements</a>
-                        <a href="#" class="menu">Activités</a>
-                    </div>
-                </nav>
-            </header>
-
 
             <!-- 
             &       Search Bar
@@ -64,9 +64,10 @@
                     <p><i class="fa-solid fa-dog"></i>Animaux autorisés</p>
                 </div>
             </div>
-            <p id="icon-info"><i class="fa-solid fa-info"></i>
-               de 500 logements sont disponibles dans cette ville
-            </p>
+            <div id="icon-info">
+                <i class="fa-solid fa-info"></i>
+                <p>de 500 logements sont disponibles dans cette ville</p>
+            </div>
             
 
 
@@ -81,7 +82,7 @@
                             <img src="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Cannebière">
                             <h4>Auberge de la Cannebière</h4>
                             <p>Nuit à partir de <b>25€</b></p>
-                            <p>
+                            <p class="stars">
                                 <i class="fa-solid fa-star star-blue"></i>
                                 <i class="fa-solid fa-star star-blue"></i>
                                 <i class="fa-solid fa-star star-blue"></i>
@@ -149,8 +150,8 @@
                                 <i class="fa-solid fa-star star-blue"></i>
                             </p>
                         </div>
-                        <h3>Afficher plus</h3> <!--*   A FINIR, doit être un lien   -->
                     </div>
+                    <a href="#"><h3>Afficher plus</h3></a>
                 </div>
 
 
@@ -215,32 +216,32 @@
             <section class="activites">
                 <h3>Activités à Marseille</h3>
                 <div class="activites-list">
-                    <div class="card-100">
+                    <div class="card-100 largeur param-card-activity">
                         <img src="assets/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
-                        <h4>Vieux Port</h4>
+                        <div class="vertical-center"><h4>Vieux Port</h4></div>
                     </div>
                     <div class="dual-card">
-                        <div class="card-60">
+                        <div class="card-60 largeur param-card-activity">
                             <img src="assets/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-                            <h4>Fort de Pomègues</h4>
+                            <div class="vertical-center"><h4>Fort de Pomègues</h4></div>
                         </div>
-                        <div class="card-40">
+                        <div class="card-40 largeur param-card-activity">
                             <img src="assets/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
-                            <h4>Îles du Frioul</h4>
+                            <div class="vertical-center"><h4>Îles du Frioul</h4></div>
                         </div>
                     </div>
-                    <div class="card-100" >
+                    <div class="card-100 largeur param-card-activity" >
                         <img src="assets/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc Nationnal des Calanques">
-                        <h4>Parc Nationnal des Calanques</h4>
+                        <div class="vertical-center"><h4>Parc Nationnal des Calanques</h4></div>
                     </div>
-                    <div class="dual-card">
-                        <div class="card-50">
+                    <div class="dual-card50">
+                        <div class="card-50 largeur param-card-activity">
                             <img src="assets/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
-                            <h4>Notre-Dame-de-la-Garde</h4>
+                            <div class="vertical-center"><h4>Notre-Dame-de-la-Garde</h4></div>
                         </div>
-                        <div class="card-50">
+                        <div class="card-50 largeur param-card-activity">
                             <img src="assets/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamps">
-                            <h4>Parc Longchamps</h4>
+                            <div class="vertical-center"><h4>Parc Longchamps</h4></div>
                         </div>
                     </div>
                 </div>
