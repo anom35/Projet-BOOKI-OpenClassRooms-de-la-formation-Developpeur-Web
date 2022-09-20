@@ -56,9 +56,9 @@ nav {
 
 .menu {
     text-decoration: none;
-    padding: 30px;
+    padding: 30px;                            /* puts spaces around menu choices */
     color: black;
-    border-top: 3px solid transparent;
+    border-top: 3px solid transparent;        /* Transparent top line that turns blue on hover */
 }
 
 .menu:hover {
@@ -216,8 +216,8 @@ form button:hover {
 */
 
 
-.all-articles {
-    display: flex;
+.all-articles {                                     /* Set general dimensions and aspect */
+    display: flex;                                  /* for hébergments and populars */
     gap: 20px;
 } 
 .all-articles > div {
@@ -250,7 +250,6 @@ form button:hover {
 }
 .hebergements h3 {
     width: 100%;
-    /* max-height: 1px; */
 }
 .hebergements a {
     text-decoration: none;
@@ -292,6 +291,7 @@ form button:hover {
 .card:hover {
     transform: scale(1.02);
     box-shadow: 0 0 8px var(--blue);
+    cursor: pointer;
 }
 .card .stars {
     margin-top: auto;
@@ -338,12 +338,12 @@ form button:hover {
 .card-popular:hover {
     transform: scale(1.02);
     box-shadow: 0 0 8px var(--blue);
+    cursor: pointer;
 }
 .card-popular img {
     object-fit: cover;
     border-radius: 16px 0 0 16px;
     height: 140px;
-    /* max-height: 150px; */
     min-width: 35%;
     width: 35%;
 }
@@ -414,6 +414,7 @@ form button:hover {
 .card-40:hover {
     transform: scale(1.02);
     box-shadow: 0 0 8px var(--blue);
+    cursor: pointer;
 }
 .card-100 img,
 .card-60 img,
@@ -512,15 +513,11 @@ footer p {
 
 
 
-
-
-
 /* 
 ^----------------------------
 &       MEDIA QUERIES
 ^----------------------------
 */
-
 
 @media (max-width: 1115px) {
     .dual-card50 {
@@ -563,7 +560,6 @@ footer p {
     }   
     .popular-list, 
     .hebergements {
-    /* .activites-list { */
         display: flex;
         flex-direction: row;
     }
@@ -585,7 +581,9 @@ footer p {
     }
 
 
-    /* section: menu */
+    /*
+    ^   section: menu 
+    */
 
     nav {
         display: block;
@@ -691,7 +689,6 @@ footer p {
         justify-content: center;
     }
     .card-popular {
-        /* width: 350px; */
         height: 150px;
         width: 100%;
         margin: 0 0 20px 0;
@@ -773,8 +770,4 @@ footer p {
         border-radius: 16px;
         box-shadow: 0 0 8px var(--dark-grey);
     } 
-
-    /* .car-100, .car-60, .card-50, .card-40 {
-        width: 100%;
-    } */
 }
