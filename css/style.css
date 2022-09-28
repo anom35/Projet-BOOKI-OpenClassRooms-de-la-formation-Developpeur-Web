@@ -22,15 +22,15 @@ body {
 }
 
 /*  
-^       hidden <label> position for accessibility       
+*       hidden <label> position for accessibility       
 */
 .accessibility-label {
 	position:absolute;
 	left:-999px;
 }
 
-main, header {
-    max-width: 1500px;                      /**  maximum display width */
+main, header, footer {
+    max-width: 1300px;                      /**  maximum display width */
     margin: 0 auto;                         /* supprime les marges haute et basse, et laisse en automatique gauche et droite */
     padding : 0 15px;                       /* Met un padding de 15px à droite et à gauche pour ne pas coller aux bords de l'écran */
 }
@@ -40,7 +40,7 @@ main, header {
 
 /* 
 ^----------------------
-&    NAVIGATION MENU     
+*    NAVIGATION MENU     
 ^----------------------
 */
 
@@ -71,7 +71,7 @@ nav {
 
 /* 
 ^----------------------
-&      SEARCH BAR     
+*      SEARCH BAR     
 ^----------------------
 */
 
@@ -119,7 +119,7 @@ form button:hover {
 }
 
 /* 
-^       make the magnifying glass disappear 
+*       make the magnifying glass disappear 
 */
 .fa-solid.fa-magnifying-glass {
     display: none;  
@@ -131,7 +131,7 @@ form button:hover {
 
 /* 
 ^----------------------
-&       FILTERS     
+*       FILTERS     
 ^----------------------
 */
 
@@ -211,7 +211,7 @@ form button:hover {
 
 /* 
 ^----------------------
-&       ARTICLES     
+*       ARTICLES     
 ^----------------------
 */
 
@@ -238,7 +238,7 @@ form button:hover {
 
 /* 
 ^--------------------------------
-&    ARTICLES --> HEBERGMENTS     
+*    ARTICLES --> HEBERGMENTS     
 ^--------------------------------
 */
 .hebergements {
@@ -303,7 +303,7 @@ form button:hover {
 
 /* 
 ^--------------------------------
-&    ARTICLES --> POPULAR     
+*    ARTICLES --> POPULAR     
 ^--------------------------------
 */
 
@@ -369,7 +369,7 @@ form button:hover {
 
 /* 
 ^--------------------------------
-&    ACTIVITIES IN MARSEILLE     
+*    ACTIVITIES IN MARSEILLE     
 ^--------------------------------
 */
 
@@ -477,7 +477,7 @@ form button:hover {
 
 /* 
 ^--------------------
-&      FOOTER     
+*      FOOTER     
 ^--------------------
 */
 
@@ -488,7 +488,7 @@ footer {
     flex-wrap: wrap;
     gap: 20px;
     background-color: var(--light-grey);
-    padding: 30px;
+    padding: 30px 0;
     
 }
 footer a {
@@ -515,7 +515,7 @@ footer p {
 
 /* 
 ^----------------------------
-&       MEDIA QUERIES
+*       MEDIA QUERIES
 ^----------------------------
 */
 
@@ -549,8 +549,8 @@ footer p {
 }
 
 @media (max-width: 992px) {
- /* 
-    ^       hébergments 
+    /* 
+    *       hébergments 
     */
     .all-articles {
         flex-direction: column-reverse;
@@ -582,7 +582,7 @@ footer p {
 
 
     /*
-    ^   section: menu 
+    *   section: menu 
     */
 
     nav {
@@ -612,7 +612,7 @@ footer p {
 
     
     /* 
-    ^   Section: Search bar 
+    *   Section: Search bar 
     */   
 
     .fa-solid.fa-magnifying-glass {
@@ -628,8 +628,8 @@ footer p {
     }
     
   
-        /* 
-    ^       filters 
+    /* 
+    *       filters 
     */
     .filters {
         display: flex;
@@ -649,7 +649,7 @@ footer p {
 
 
     /* 
-    ^       hébergments 
+    *       hébergments 
     */
     .all-articles {
         flex-direction: column-reverse;
@@ -676,7 +676,7 @@ footer p {
 
 
     /* 
-    ^       popular 
+    *       popular 
     */
     .populaires {
         padding-left: 0;
@@ -703,10 +703,11 @@ footer p {
 
 
     /* 
-    ^       footer 
+    *       footer 
     */
     footer {
         display: block;
+        padding-left: 30px;
     }
     .footer-left, .footer-middle {
         margin-bottom: 25px;
@@ -730,8 +731,8 @@ footer p {
 
 
 @media (max-width: 530px) {
- /* 
-    ^       activités 
+    /* 
+    *       activités 
     */
     .activites {
         margin: 40px 0 20px 0;
