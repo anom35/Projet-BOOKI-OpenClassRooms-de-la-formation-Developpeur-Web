@@ -30,9 +30,9 @@ body {
 }
 
 main, header, footer {
-    max-width: 1300px;                      /**  maximum display width */
-    margin: 0 auto;                         /* supprime les marges haute et basse, et laisse en automatique gauche et droite */
-    padding : 0 15px;                       /* Met un padding de 15px à droite et à gauche pour ne pas coller aux bords de l'écran */
+    max-width: 1300px;                      
+    margin: 0 auto;                         
+    padding : 0 15px;                       
 }
 
 
@@ -43,7 +43,6 @@ main, header, footer {
 *    NAVIGATION MENU     
 ^----------------------
 */
-
 nav {
     display: flex;
     justify-content: flex-end;
@@ -74,7 +73,6 @@ nav {
 *      SEARCH BAR     
 ^----------------------
 */
-
 form {
     display: inline-block;
     width: 100%;
@@ -134,7 +132,6 @@ form button:hover {
 *       FILTERS     
 ^----------------------
 */
-
 .filters {
     display: inline-flex;
     padding-top: 18px;
@@ -210,14 +207,10 @@ form button:hover {
 
 
 /* 
-^----------------------
 *       ARTICLES     
-^----------------------
 */
-
-
-.all-articles {                                     /* Set general dimensions and aspect */
-    display: flex;                                  /* for hébergments and populars */
+.all-articles {                                   
+    display: flex;                                  
     gap: 20px;
 } 
 .all-articles > div {
@@ -237,9 +230,7 @@ form button:hover {
 
 
 /* 
-^--------------------------------
 *    ARTICLES --> HEBERGMENTS     
-^--------------------------------
 */
 .hebergements {
     display: flex;
@@ -284,7 +275,6 @@ form button:hover {
     width: 100%;
     object-fit: cover;
 }
-
 .card p, .card h4 {
     margin: 5px
 }
@@ -302,17 +292,13 @@ form button:hover {
 
 
 /* 
-^--------------------------------
 *    ARTICLES --> POPULAR     
-^--------------------------------
 */
-
 .populaires {
     display: flex;
     flex-direction: column;
     background-color: var(--light-grey);
 }
-
 .populaires h3 {
     display: flex;
     justify-content: space-between;
@@ -368,11 +354,8 @@ form button:hover {
 
 
 /* 
-^--------------------------------
 *    ACTIVITIES IN MARSEILLE     
-^--------------------------------
 */
-
 .activites {
     margin: 40px 10px 20px 10px;
 }
@@ -428,7 +411,6 @@ form button:hover {
 /*     
 *       CARD HEIGHT    
 */
-
 .card-100 img {
     height: 90%;
 }
@@ -462,11 +444,9 @@ form button:hover {
 .star-blue, .star-grey {
     background-color: inherit;
 }
-
 .star-blue {
     color: var(--blue);
 }
-  
 .star-grey {
     color: var(--grey);
 }
@@ -476,11 +456,8 @@ form button:hover {
 
 
 /* 
-^--------------------
 *      FOOTER     
-^--------------------
 */
-
 footer {
     display: flex;
     justify-content: center;
@@ -514,23 +491,20 @@ footer p {
 
 
 /* 
-^----------------------------
 *       MEDIA QUERIES
-^----------------------------
 */
-
 @media (max-width: 1115px) {
     .dual-card50 {
         display: flex;
         flex-direction: row;
         gap: 20px;
         flex-basis: 70%;
-
     }
     .card-50 {
         height: 180px;
         flex-basis: 50%;
     }
+
     .card-100, .card-60, .card-40 {
         flex-basis: 30%;
     }
@@ -558,6 +532,7 @@ footer p {
     .all-articles > div {
         background-color: var(--white);
     }   
+
     .popular-list, 
     .hebergements {
         display: flex;
@@ -580,11 +555,9 @@ footer p {
         margin-left: 0px;
     }
 
-
     /*
     *   section: menu 
     */
-
     nav {
         display: block;
     }
@@ -610,11 +583,9 @@ footer p {
         border-bottom-color: var(--blue);  
     }
 
-    
     /* 
     *   Section: Search bar 
     */   
-
     .fa-solid.fa-magnifying-glass {
         display: inline;
         background-color: var(--blue);
@@ -622,7 +593,6 @@ footer p {
         font-size: 15px;
         padding: 0;
     }
-
     .btn-search span {
         display: none;
     }
@@ -644,8 +614,6 @@ footer p {
     .fa-solid.fa-info {
         min-width: 25px;
     }
-
-
 
 
     /* 
